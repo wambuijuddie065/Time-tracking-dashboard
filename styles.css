@@ -7,7 +7,7 @@
 
 }
 body{
-    background-color:  hsl(226, 43%, 10%);
+    background-color:  #0D1323;
     display: grid;
     justify-content: center;
     height: 100vh;
@@ -40,7 +40,7 @@ body{
 }
 .card-report{
    
-    background-color: hsl(246, 80%, 60%);
+    background-color: hsl(264, 64%, 52%);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -237,7 +237,23 @@ img{
     }
 
     
-    
+  
+}
+@media screen and (min-width:820px) and (max-width:820px){
+    .container{
+        padding: 40px 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(220px) ;
+        grid-auto-flow: column;
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-areas:
+         "a b c"
+         "a d e"
+         "a f g"
+         ;  
+    }  
 }
 
 
